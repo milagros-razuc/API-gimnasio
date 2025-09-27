@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Gimnasio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏋️‍♀️ Gimnasio</h1>
+
+  <section>
+    <h2>📋 Clases disponibles</h2>
+    <button onclick="fetchClases()">Ver clases</button>
+    <ul id="clases-list"></ul>
+  </section>
+
+  <section>
+    <h2>🧑‍🏫 Entrenadores</h2>
+    <button onclick="fetchEntrenadores()">Ver entrenadores</button>
+    <ul id="entrenadores-list"></ul>
+  </section>
+
+  <section>
+    <h2>📝 Inscripción a clase</h2>
+    <form id="inscripcion-form">
+      <input type="number" placeholder="ID Miembro" name="miembroId" required />
+      <input type="number" placeholder="ID Clase" name="claseId" required />
+      <button type="submit">Inscribirse</button>
+    </form>
+    <p id="inscripcion-msg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
