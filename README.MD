@@ -187,7 +187,7 @@ DELETE http://localhost:<PORT>/miembros/1
 Para poder correr el proyecto se debe generar un archivo `.env` en la raíz del proyecto con tus datos de conexión a la base de datos:
 
 ```env
-DB_NAME=trailerflix
+DB_NAME=gimnasio
 DB_USER=root
 DB_PASS=tu_contraseña
 DB_HOST=localhost
