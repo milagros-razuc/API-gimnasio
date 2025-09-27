@@ -1,0 +1,43 @@
+:root {
+  --button-color: #0077b6;
+  --button-hover: #023e8a;
+  --titulo-color: #030347;
+  --text-color: #333;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #2a6cad, #bcd2e7, #139fe4);
+  padding: 2rem;
+  color: #333;
+}
+
+h1 {
+  color: var(--titulo-color);
+  text-align: center;
+  border-bottom: 2px solid var(--titulo-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: var(--button-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
