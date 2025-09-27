@@ -1,13 +1,25 @@
 # Gym Management API
 API para gestionar un gimnasio: miembros, entrenadores, clases, membresías e inscripciones. Construida con Node.js, Express y Sequelize (MySQL).
 
+#### Api realizada por: Razuc Milagros
+
 ## URL BASE
 La URL base de la API es:
 ```
  http://localhost:<PORT>/
  ```
+## 🚀 Tecnologías utilizadas
 
-## Modelo BBDD
+#### Backend
+- [Node.js](https://nodejs.org/) – entorno de ejecución JavaScript
+- [Express](https://expressjs.com/) – framework web para Node
+- [Sequelize](https://sequelize.org/) – ORM para bases de datos relacionales
+- [MySQL](https://www.mysql.com/) – motor de base de datos
+- [dotenv](https://www.npmjs.com/package/dotenv) – gestión de variables de entorno
+- [Postman](https://www.postman.com/) – herramienta para testear APIs
+- 
+## 🚀 Diagrama de Base de Datos
+![Diagrama del sistema](imagenes/diagrama.png)
 
 
 ## Endpoints
@@ -170,3 +182,16 @@ DELETE http://localhost:<PORT>/miembros/1
 {"message":"Miembro eliminado exitosamente",
 "eliminado":{"id":11,"nombre":"Tomás Díaz","email":"tomas.diaz@email.com","telefono":"+54 11 4444-5555","idMembresia":4,"fechaRegistro":"2025-09-26","fechaInicioMembresia":"2025-01-20","fechaFinMembresia":"2025-02-19","activo":false}}
 ```
+
+## ⚙️ Configuración inicial
+Para poder correr el proyecto se debe generar un archivo `.env` en la raíz del proyecto con tus datos de conexión a la base de datos:
+
+```env
+DB_NAME=trailerflix
+DB_USER=root
+DB_PASS=tu_contraseña
+DB_HOST=localhost
+DB_DIALECT=mysql
+PORT=3006
+```
+
