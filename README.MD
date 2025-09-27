@@ -166,6 +166,7 @@ DELETE http://localhost:<PORT>/miembros/1
 
 ```
 *RESPONSE*
-```
-{"message":"Miembro eliminado exitosamente"}
+```json
+{"message":"Miembro eliminado exitosamente",
+"eliminado":{"id":11,"nombre":"Tomás Díaz","email":"tomas.diaz@email.com","telefono":"+54 11 4444-5555","idMembresia":4,"fechaRegistro":"2025-09-26","fechaInicioMembresia":"2025-01-20","fechaFinMembresia":"2025-02-19","activo":false}}
 ```
